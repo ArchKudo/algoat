@@ -8,6 +8,6 @@ script:
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 before_install:
-  - sudo add-apt-repository ppa:snaipewastaken/ppa
-  - sudo apt-get update
-  - sudo apt-get install criterion-dev
+  - sudo add-apt-repository ppa:snaipewastaken/ppa -y
+  - sudo apt-get update -q
+  - sudo apt-get install criterion-dev -y
