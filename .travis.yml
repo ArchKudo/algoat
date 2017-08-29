@@ -1,5 +1,5 @@
 language: c
-sudo: false # only for faster builds
+sudo: required # only for faster builds
 script:
   - make all
   - make test
