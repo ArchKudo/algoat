@@ -1,0 +1,13 @@
+language: c
+sudo: false # only for faster builds
+script:
+  - make all
+  - make test
+  - ./test
+  - gcov test.c
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+before_install:
+  - sudo add-apt-repository ppa:snaipewastaken/ppa
+  - sudo apt-get update
+  - sudo apt-get install criterion-dev
