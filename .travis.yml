@@ -1,5 +1,5 @@
 language: c
-sudo: required # only for faster builds
+sudo: required
 script:
   - make test
   - ./test
