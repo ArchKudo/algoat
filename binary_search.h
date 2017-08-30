@@ -2,12 +2,12 @@
 #define __BINARY_SEARCH__
 
 /**
- * Binary search implementation, searches for `pin` in `hay`
- * @param  hay  The array in which the `pin` is searched for
- * @param  size The size of the array `hay`
- * @param  pin  The element to search for in the array `hay`
- * @return      Returns index of `hay` at which `pin` if exists is found else -1
+ * Binary search implementation, searches for `query` in `arr`
+ * @param  arr  The array in which the `query` is searched for
+ * @param  size The size of the array `arr`
+ * @param  query  The element to search for in the array `arr`
+ * @return      Returns index of `arr` at which `query` if exists is found else -1
  */
-int binary_search(int *hay, int size, int pin);
+int binary_search(int *arr, int size, int query);
 
 #endif
