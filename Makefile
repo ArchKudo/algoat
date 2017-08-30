@@ -21,11 +21,8 @@ prog_CFLAGS	= -std=c99 \
 							-fno-omit-frame-pointer -ffloat-store -fno-common -fstrict-aliasing \
 
 LDFLAGS	= -lcriterion -lgcov --coverage
-all:	main
-main:	main.o binary_search.o
-	$(CC) $? -o $@
-main.o:	main.c
-	$(CC) $(prog_CFLAGS) $? -o $@
+
+all:	test
 test:	test.o binary_search.o
 	$(CC) $(LDFLAGS) $? -o $@
 binary_search.o:	binary_search.c
