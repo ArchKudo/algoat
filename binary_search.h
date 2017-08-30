@@ -1,3 +1,6 @@
+#ifndef __BINARY_SEARCH__
+#define __BINARY_SEARCH__
+
 /**
  * Binary search implementation, searches for `pin` in `hay`
  * @param  hay  The array in which the `pin` is searched for
@@ -6,3 +9,5 @@
  * @return      Returns index of `hay` at which `pin` if exists is found else -1
  */
 int binary_search(int *hay, int size, int pin);
+
+#endif
