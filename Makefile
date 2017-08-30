@@ -30,4 +30,4 @@ gcov: test
 	./$?
 	gcov binary_search.c
 clean:
-	rm -f *.{o,gcov,gcda,gcno} binary_search test main
+	rm -f *.{o,gcov,gcda,gcno} binary_search test
