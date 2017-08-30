@@ -25,7 +25,7 @@ test:	test.o binary_search.o
 binary_search.o:	binary_search.c
 	$(CC) $(CFLAGS) $? -o $@
 test.o:	test.c
-	$(CC) $(CFLAGS) $? -o $@
+	$(CC) -c $? -o $@
 gcov: test
 	./$?
 	gcov binary_search.c
