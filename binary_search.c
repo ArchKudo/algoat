@@ -1,6 +1,5 @@
 #include "binary_search.h"
 #include <stdint.h>
-#include <stdio.h>
 #include <stdlib.h>
 
 int16_t binary_search(int_fast64_t *arr, uint8_t size, int_fast64_t query) {
